@@ -1,0 +1,34 @@
+<html>
+<head>
+	<p id="demo"> </p>
+</head>
+<body>
+	Create a HTML page to explain the use of various predefined functions in a string and math object in JavaScript
+
+<br>
+	<script>
+		document.write("Value of PI :"+Math.PI+"<br>");
+		document.write("Value of Square root of 2 is: "+Math.SQRT2+"<br>");
+		document.write("Value of Log E to the base 10 : "+Math.LOG10E+"<br>");
+		document.write("Value of Logarithm value of E is: "+Math.E+"<br>");
+	
+		document.write("<br><br>");
+	//length	
+
+ 		let text1 = "SANILA SUNNY";
+		document.getElementById("demo").innerHTML ="Length of 'SANILA SUNNY': ="+ text1.length;
+	//Slice	
+ 		let text = "SANILA SUNNY";
+		let part = text.slice(5)
+		document.getElementById("demo").innerHTML ="String slicing demo :"+ part;
+	//Replace
+
+		document.getElementById("demo").innerHTML = "Replaced text : "+
+  		text.replace("SANILA","SIERRA");
+  	//Locate
+  		let text2 = "SANILA SUNNY is a student";
+ 		document.getElementById("demo").innerHTML ="Location of SANILA :"+ text2.indexOf("SUNNY");
+</script>
+
+</body>
+</html>
